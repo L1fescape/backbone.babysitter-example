@@ -28,7 +28,11 @@ var Container = Marionette.ItemView.extend({
   addChildView: function(view){
     this.children.add(view);
 
-    // `this._isShown` gets set when `Marionette.MonitorDOMRefresh(this);` is called in the constructor of Marionette's View (https://github.com/marionettejs/backbone.marionette/blob/master/src/marionette.view.js#L21). The actual property gets set here: https://github.com/marionettejs/backbone.marionette/blob/3e63c45f87c28340f4ab6ff0fe80b84dba1cbc17/src/marionette.domRefresh.js#L12 
+    // `this._isShown` gets set when the `show` event is triggered on the view.
+    // This is setup via marionette.domRefresh[1], which gets called inside the
+    // constructor of marionette.view[2].
+    // 1. https://github.com/marionettejs/backbone.marionette/blob/0c6447179e7bd1243061a6cbe7f59b791c7f2028/src/marionette.domRefresh.js#L12 
+    // 2. https://github.com/marionettejs/backbone.marionette/blob/0c6447179e7bd1243061a6cbe7f59b791c7f2028/src/marionette.view.js#L21
     if( this._isShown ){
       this._renderChildView(view, this.$(this.childContainer));
     }
