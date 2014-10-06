@@ -1,0 +1,20 @@
+{
+  "name": "Backbone Babysitter Example",
+  "version": "0.0.1",
+  "description": "A short example of using backbone.babysitter",
+  "main": "index.js",
+  "dependencies": {
+    "backbone.marionette": "^2.2.1",
+    "jquery": "^2.1.1",
+    "backbone": "^1.1.2",
+    "underscore": "^1.7.0"
+  },
+  "devDependencies": {
+    "browserify": "^5.12.1"
+  },
+  "scripts": {
+    "build": "./node_modules/browserify/bin/cmd.js main.js -o htdocs/bundle.js"
+  },
+  "author": "Andrew Kennedy <andrew@akenn.org>",
+  "license": "ISC"
+}
