@@ -1,5 +1,5 @@
 {
-  "name": "Backbone Babysitter Example",
+  "name": "backbone.babysitter-example",
   "version": "0.0.1",
   "description": "A short example of using backbone.babysitter",
   "main": "index.js",
@@ -7,7 +7,8 @@
     "backbone.marionette": "^2.2.1",
     "jquery": "^2.1.1",
     "backbone": "^1.1.2",
-    "underscore": "^1.7.0"
+    "underscore": "^1.7.0",
+    "backbone.babysitter": "^0.1.5"
   },
   "devDependencies": {
     "browserify": "^5.12.1"
