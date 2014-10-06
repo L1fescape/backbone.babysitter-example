@@ -2,7 +2,7 @@
 
 Short example of how to use [Backbone.Babysitter](https://github.com/marionettejs/backbone.babysitter).
 
-For a more complete example, check out how it's [implemented in Marionette's CollectionView](https://github.com/marionettejs/backbone.marionette/blob/3e63c45f87c28340f4ab6ff0fe80b84dba1cbc17/src/marionette.collectionview.js#L304).
+For a more complete example, check out how it's [implemented in Marionette's CollectionView](https://github.com/marionettejs/backbone.marionette/blob/bb0074f0ad1c6b48a4dadf0f429321dd9918078e/src/marionette.collectionview.js).
 
 #### Install and Build
 
